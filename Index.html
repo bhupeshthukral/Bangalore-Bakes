@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Bakes | Artisanal Bakery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Banner -->
+    <div class="header-banner">
+        <span>Made by Bhupesh Thukral for IIMB project</span>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/IIM_Bangalore_Logo.svg/800px-IIM_Bangalore_Logo.svg.png" alt="IIMB Logo">
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="logo">Bangalore Bakes</div>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">₹0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Freshly Baked Happiness</h1>
+            <p>Traditional recipes with modern twists. Every bite tells a story of craftsmanship and passion.</p>
+            <a href="menu.html" class="btn-primary">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1556742031-c6961e8560b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Bakery Interior">
+        </div>
+        <div class="about-content">
+            <p class="section-subtitle">Our Story</p>
+            <h2 class="section-title">A Passion for Traditional Baking</h2>
+            <p class="about-text">
+                Founded in 2018, Bangalore Bakes started as a small passion project in a home kitchen. Today, we're proud to be serving the finest artisanal breads and pastries in Bangalore, crafted with locally-sourced ingredients and traditional techniques passed down through generations.
+            </p>
+            <p class="about-text">
+                Every product is handmade with care, using slow fermentation methods that enhance flavor and create that distinctive artisanal texture we're known for.
+            </p>
+            <a href="about.html" class="btn-primary">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products">
+        <div class="products-header">
+            <p class="section-subtitle">Our Selection</p>
+            <h2 class="section-title">Featured Baked Goods</h2>
+        </div>
+        
+        <div class="category-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="bread">Breads</button>
+            <button class="filter-btn" data-filter="pastry">Pastries</button>
+            <button class="filter-btn" data-filter="cake">Cakes</button>
+            <button class="filter-btn" data-filter="cookie">Cookies</button>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="bread">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sourdough Bread">
+                </div>
+                <div class="product-details">
+                    <p class="product-category">Bread</p>
+                    <h3 class="product-title">Artisan Sourdough</h3>
+                    <div class="product-price">
+                        <span>₹350</span>
+                        <div class="add-to-cart" data-id="1" data-name="Artisan Sourdough" data-price="350">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card" data-category="pastry">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Chocolate Croissant">
+                </div>
+                <div class="product-details">
+                    <p class="product-category">Pastry</p>
+                    <h3 class="product-title">Chocolate Croissant</h3>
+                    <div class="product-price">
+                        <span>₹180</span>
+                        <div class="add-to-cart" data-id="2" data-name="Chocolate Croissant" data-price="180">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card" data-category="cake">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Red Velvet Cake">
+                </div>
+                <div class="product-details">
+                    <p class="product-category">Cake</p>
+                    <h3 class="product-title">Red Velvet Cake</h3>
+                    <div class="product-price">
+                        <span>₹650</span>
+                        <div class="add-to-cart" data-id="3" data-name="Red Velvet Cake" data-price="650">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card" data-category="bread">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Multigrain Loaf">
+                </div>
+                <div class="product-details">
+                    <p class="product-category">Bread</p>
+                    <h3 class="product-title">Multigrain Loaf</h3>
+                    <div class="product-price">
+                        <span>₹280</span>
+                        <div class="add-to-cart" data-id="4" data-name="Multigrain Loaf" data-price="280">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="view-all-container">
+            <a href="menu.html" class="btn-secondary">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-header">
+            <p class="section-subtitle">What Our Customers Say</p>
+            <h2 class="section-title">Testimonials</h2>
+        </div>
+        
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "The sourdough bread has become a staple in our household. The texture and flavor are simply unmatched!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-details">
+                        <h4>Priya Sharma</h4>
+                        <p>Regular Customer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "I ordered a birthday cake and it was not only beautiful but also delicious. Everyone at the party loved it!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-details">
+                        <h4>Rajiv Mehta</h4>
+                        <p>Bangalore</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Their pastries are a perfect treat for my morning coffee. Fresh, flaky, and not too sweet."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-details">
+                        <h4>Sneha Reddy</h4>
+                        <p>Food Blogger</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="instagram-feed">
+        <div class="instagram-header">
+            <p class="section-subtitle">Follow Us</p>
+            <h2 class="section-title">@BangaloreBakes</h2>
+        </div>
+        
+        <div class="instagram-grid">
+            <a href="#" class="instagram-item">
+                <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#" class="instagram-item">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#" class="instagram-item">
+                <img src="https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#" class="instagram-item">
+                <img src="https://images.unsplash.com/photo-1567002260475-06cc6f45ce6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#" class="instagram-item">
+                <img src="https://images.unsplash.com/photo-1560427450-690ec9da98c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+            <a href="#" class="instagram-item">
+                <img src="https://images.unsplash.com/photo-1531327431456-9621b5ae3be9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-logo">Bangalore Bakes</h3>
+                <p>Artisanal bakery offering handcrafted breads, pastries, and cakes made with traditional methods and the finest ingredients.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contact Information</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Brigade Road, Koramangala, Bangalore</li>
+                    <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    <li><i class="fas fa-envelope"></i> info@bangalorebakes.com</li>
+                    <li><i class="fas fa-clock"></i> Open: 7am - 9pm (Mon-Sun)</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive updates on new items and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2023 Bangalore Bakes. Academic project for demonstration purposes.</p>
+            <p>Made by Bhupesh Thukral | IIMB</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
