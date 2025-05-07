@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Bangalore Bakes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Banner -->
+    <div class="header-banner">
+        <span>Made by Bhupesh Thukral for IIMB project</span>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/IIM_Bangalore_Logo.svg/800px-IIM_Bangalore_Logo.svg.png" alt="IIMB Logo">
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="logo">Bangalore Bakes</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Shopping Cart -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-amount">₹0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div>
+            <h1>About Us</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>About Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="story-content">
+            <p class="section-subtitle">Our Story</p>
+            <h2 class="section-title">From Home Kitchen to Beloved Bakery</h2>
+            <p>
+                Founded in 2018, Bangalore Bakes began as a passionate experiment in a small home kitchen. What started as weekend baking for friends and family quickly blossomed into something much bigger when people began placing orders after tasting our artisanal creations.
+            </p>
+            <p>
+                Our founder, Priya Nair, a former corporate professional with a lifelong passion for baking, decided to pursue her dream full-time after her sourdough bread and specialty cakes gained popularity in local farmers' markets.
+            </p>
+            <p>
+                Today, we're proud to have grown into one of Bangalore's most cherished artisanal bakeries, with a loyal customer base that appreciates our commitment to traditional methods, locally-sourced ingredients, and innovative flavors that blend global techniques with Indian influences.
+            </p>
+            <p>
+                Every product at Bangalore Bakes is still handmade with the same care and attention to detail as when we first started, using slow fermentation methods and natural ingredients that enhance flavor and create that distinctive artisanal texture we're known for.
+            </p>
+        </div>
+        <div class="story-image">
+            <img src="https://images.unsplash.com/photo-1514066558159-fc8c737ef259?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Our bakery beginning">
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="about" style="background-color: var(--light-accent);">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Local ingredients">
+        </div>
+        <div class="about-content">
+            <p class="section-subtitle">Our Values</p>
+            <h2 class="section-title">Quality, Tradition & Community</h2>
+            <p class="about-text">
+                At Bangalore Bakes, we believe in three core values that guide everything we do:
+            </p>
+            <p class="about-text">
+                <strong>Quality Without Compromise:</strong> We use only the finest ingredients, sourced locally whenever possible. Our flour comes from organic farms, our butter is churned by a family-run dairy, and our fruits are seasonal and fresh.
+            </p>
+            <p class="about-text">
+                <strong>Honoring Tradition:</strong> We embrace time-tested baking techniques that have been passed down through generations. Our sourdough uses a starter that's been nurturing for years, and our laminated pastries take three days to make from scratch.
+            </p>
+            <p class="about-text">
+                <strong>Building Community:</strong> We believe food brings people together. That's why we host monthly baking workshops, support local farmers, and donate unsold bread to community shelters.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="team-header">
+            <p class="section-subtitle">Meet Our Team</p>
+            <h2 class="section-title">The Faces Behind Your Favorite Bakes</h2>
+            <p>Our diverse team brings together decades of experience and passion for artisanal baking.</p>
+        </div>
+        
+        <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Priya Nair">
+                </div>
+                <div class="member-details">
+                    <h3 class="member-name">Priya Nair</h3>
+                    <p class="member-title">Founder & Head Baker</p>
+                    <p>Former corporate professional with a lifelong passion for traditional baking techniques and sourdough fermentation.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Rajiv Mehta">
+                </div>
+                <div class="member-details">
+                    <h3 class="member-name">Rajiv Mehta</h3>
+                    <p class="member-title">Pastry Chef</p>
+                    <p>Trained in France, Rajiv brings 15 years of experience crafting exquisite pastries and viennoiseries with artistic precision.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Ananya Singh">
+                </div>
+                <div class="member-details">
+                    <h3 class="member-name">Ananya Singh</h3>
+                    <p class="member-title">Cake Designer</p>
+                    <p>A creative genius who transforms ideas into stunning cake creations, specializing in modern designs and traditional flavors.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 4 -->
+            <div class="team-member">
+                <div class="member-image">
+                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Karthik Rao">
+                </div>
+                <div class="member-details">
+                    <h3 class="member-name">Karthik Rao</h3>
+                    <p class="member-title">Head of Operations</p>
+                    <p>The one who ensures everything runs smoothly behind the scenes, from ingredient sourcing to order fulfillment.</p>
+                    <div class="member-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-header">
+            <p class="section-subtitle">What Our Customers Say</p>
+            <h2 class="section-title">Testimonials</h2>
+        </div>
+        
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "I've been buying sourdough from Bangalore Bakes for over a year now. The quality is consistently amazing, and their attention to detail sets them apart from other bakeries."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-details">
+                        <h4>Priya Sharma</h4>
+                        <p>Regular Customer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Their croissants remind me of the ones I used to have in Paris. Perfectly flaky, buttery, and absolutely delicious. Best bakery in Bangalore, hands down!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-details">
+                        <h4>Rajiv Mehta</h4>
+                        <p>Bangalore</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text">
+                    "The baking workshop I attended at Bangalore Bakes was eye-opening. Learning the science behind sourdough with such passionate instructors made for an unforgettable experience."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-details">
+                        <h4>Sneha Reddy</h4>
+                        <p>Food Blogger</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-logo">Bangalore Bakes</h3>
+                <p>Artisanal bakery offering handcrafted breads, pastries, and cakes made with traditional methods and the finest ingredients.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contact Information</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Brigade Road, Koramangala, Bangalore</li>
+                    <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                    <li><i class="fas fa-envelope"></i> info@bangalorebakes.com</li>
+                    <li><i class="fas fa-clock"></i> Open: 7am - 9pm (Mon-Sun)</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive updates on new items and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2023 Bangalore Bakes. Academic project for demonstration purposes.</p>
+            <p>Made by Bhupesh Thukral | IIMB</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
