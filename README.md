@@ -32,8 +32,8 @@ Bangalore-Bakes/
 ✔ **Contact form** (frontend-only)  
 ✔ **Smooth hover effects** (CSS)  
 
-## **Live Demo** *(Optional)*  
-🔗 [https://your-deployed-link.netlify.app](https://your-deployed-link.netlify.app)  
+## **Live Demo** 
+🔗 [[https://your-deployed-link.netlify.app](https://your-deployed-link.netlify.app)  ](https://bhupeshthukral.github.io/Bangalore-Bakes/)
 
 ## **Author**  
 **Bhupesh Thukral**  
