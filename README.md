@@ -1,8 +1,7 @@
 # **Bangalore Bakes** 🍞🥐  
 
 *A simple, responsive bakery website built with HTML, CSS, and JavaScript*  
-
-![Website Preview](https://via.placeholder.com/800x400?text=Bangalore+Bakes+Preview) *(Add a real screenshot later)*  
+https://bhupeshthukral.github.io/Bangalore-Bakes/
 
 ## **About**  
 This is a **static website** for a Bangalore-based bakery, created as part of the **IIMB Web Development Program**. It includes:  
@@ -33,7 +32,7 @@ Bangalore-Bakes/
 ✔ **Smooth hover effects** (CSS)  
 
 ## **Live Demo** 
-🔗 [[https://your-deployed-link.netlify.app](https://your-deployed-link.netlify.app)  ](https://bhupeshthukral.github.io/Bangalore-Bakes/)
+🔗 (https://bhupeshthukral.github.io/Bangalore-Bakes/)
 
 ## **Author**  
 **Bhupesh Thukral**  
